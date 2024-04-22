@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Amasis II",
+    "version": "1.2",
+    "description": "A simple hello world extension that displays the current URL, changes, and remembers page background color",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "permissions":[
+        "activeTab",
+        "storage",
+        "contextMenus"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+  
