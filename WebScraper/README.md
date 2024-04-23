@@ -1,0 +1,1 @@
+Basic Chrome Extension Web Server. Can Scrap data and display it. Adding more functionality. 

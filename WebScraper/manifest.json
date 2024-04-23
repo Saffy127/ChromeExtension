@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Web Scraper and Analyzer",
+    "version": "1.0",
+    "description": "An extension that scrapes and analyzes data from web pages.",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "scripting"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+  
